@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Risely - Gizlilik Politikası</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --color-obsidian-900: #020303;
+            --color-obsidian-500: #0C0E11;
+            --color-emerald-400: #67BDA7;
+            --color-emerald-300: #8DCEBD;
+            --color-champagne-500: #D9D2C5;
+            --color-champagne-400: #D0BE9A;
+            --color-champagne-300: #DCCDB3;
+            --color-bone: #E8E2D9;
+            --color-white: #FFFFFF;
+            --color-border: rgba(217, 210, 197, 0.08);
+            --color-glass: rgba(217, 210, 197, 0.02);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--color-obsidian-900);
+            color: var(--color-bone);
+            line-height: 1.6;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: var(--color-obsidian-500);
+            border: 1px solid var(--color-border);
+            border-radius: 24px;
+            padding: 48px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+            border-bottom: 1px solid var(--color-border);
+            padding-bottom: 30px;
+        }
+
+        .logo {
+            font-size: 32px;
+            font-weight: 700;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+            color: var(--color-white);
+            margin-bottom: 8px;
+        }
+
+        .tagline {
+            font-size: 14px;
+            color: var(--color-champagne-400);
+            letter-spacing: 6px;
+            text-transform: uppercase;
+            margin-bottom: 16px;
+            opacity: 0.8;
+        }
+
+        .last-update {
+            font-size: 12px;
+            color: var(--color-champagne-300);
+            opacity: 0.6;
+        }
+
+        h1 {
+            font-size: 24px;
+            font-weight: 700;
+            color: var(--color-white);
+            margin-bottom: 24px;
+            text-align: center;
+        }
+
+        h2 {
+            font-size: 16px;
+            font-weight: 600;
+            color: var(--color-champagne-400);
+            margin-top: 32px;
+            margin-bottom: 12px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            display: flex;
+            align-items: center;
+        }
+
+        h2::before {
+            content: "";
+            display: inline-block;
+            width: 8px;
+            height: 8px;
+            background-color: var(--color-emerald-400);
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+
+        p {
+            font-size: 15px;
+            margin-bottom: 16px;
+            color: var(--color-bone);
+            opacity: 0.9;
+            text-align: justify;
+        }
+
+        ul {
+            list-style-type: none;
+            margin-bottom: 24px;
+            padding-left: 8px;
+        }
+
+        li {
+            font-size: 14px;
+            margin-bottom: 10px;
+            position: relative;
+            padding-left: 20px;
+            opacity: 0.85;
+        }
+
+        li::before {
+            content: "•";
+            color: var(--color-emerald-300);
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+
+        footer {
+            margin-top: 48px;
+            border-top: 1px solid var(--color-border);
+            padding-top: 24px;
+            text-align: center;
+            font-size: 12px;
+            color: var(--color-champagne-300);
+            opacity: 0.5;
+        }
+
+        @media (max-width: 600px) {
+            body {
+                padding: 20px 10px;
+            }
+
+            .container {
+                padding: 24px;
+                border-radius: 16px;
+            }
+
+            h1 {
+                font-size: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <div class="logo">Risely</div>
+        <div class="tagline">Sarsılmaz ol.</div>
+        <div class="last-update">Son Güncelleme: 17 Mayıs 2026</div>
+    </header>
+
+    <h1>GİZLİLİK POLİTİKASI</h1>
+
+    <p>
+        Risely uygulamasını tercih ettiğiniz için teşekkür ederiz. Risely, liderlik gelişimi, kişisel disiplin ve mental berraklık yolculuğunuzda size eşlik eden bir yapay zeka mentörlük platformudur. Biz, gizliliğinize en üst düzeyde önem veriyoruz. Bu Gizlilik Politikası, verilerinizin nasıl işlendiğini, nerede saklandığını ve haklarınızı korumak için aldığımız güvenlik önlemlerini açıklamaktadır.
+    </p>
+
+    <h2>1. Birincil İlke: Yerel Depolama (On-Device Storage)</h2>
+    <p>Risely, gizlilik ve veri sahipliği ilkesini temel alarak çalışır:</p>
+    <ul>
+        <li>Günlük yansımalarınız (refleksiyonlarınız), görev tamamlanma geçmişiniz, kazandığınız rozetler, başarılarınız ve kullanıcı adınız tamamen cihazınızın yerel depolama alanında (AsyncStorage ve expo-file-system) saklanır.</li>
+        <li>Bu veriler hiçbir merkezi Risely sunucusuna aktarılmaz, yedeklenmez ve bizim tarafımızdan üçüncü şahıslara satılmaz veya paylaşılmaz. Verileriniz tamamen sizin cihazınızda ve sizin kontrolünüzdedir.</li>
+    </ul>
+
+    <h2>2. Yapay Zeka (AI) Entegrasyonu ve Veri İletimi</h2>
+    <p>Uygulama içerisindeki kişisel liderlik analizleri, günlük kıvılcımlar ve gelişim manifestoları, dünya standartlarında yapay zeka modelleri (OpenAI / GPT) entegrasyonuyla üretilmektedir:</p>
+    <ul>
+        <li>Yapay zekaya gönderilen yansıma metinleri ve gelişim verileri, kimliğinizi doğrudan açık edecek hiçbir kişisel bilgi (soyadı, e-posta, telefon, IP adresi) barındırmaz.</li>
+        <li>AI analiz sorguları tamamen anonimleştirilmiş (isimsizleştirilmiş) verilerle gerçekleştirilir. Yapay zeka servis sağlayıcıları, bu verileri kendi modellerini eğitmek amacıyla kullanamaz.</li>
+    </ul>
+
+    <h2>3. Kullanıcı Hakları ve Kontrol</h2>
+    <ul>
+        <li><strong>Verileri Sıfırlama Hakkı:</strong> İstediğiniz an Ayarlar menüsünden aktif planınızı ve uygulama geçmişinizi sıfırlayabilirsiniz.</li>
+        <li><strong>Cihaz Değişikliği ve Veri Silme:</strong> Uygulamayı cihazınızdan sildiğinizde, cihazınızda saklanan tüm yerel veriler (yansımalarınız, rozetleriniz ve planınız) kalıcı olarak ve geri döndürülemeyecek şekilde silinir. Bu verileri harici olarak kurtarma imkanımız bulunmamaktadır.</li>
+    </ul>
+
+    <h2>4. Hukuki Koruma ve Uyumluluk</h2>
+    <p>
+        Bu gizlilik politikası, uygulamanın yayında olduğu tüm platformların yerel ve uluslararası gizlilik sözleşmelerine ve genel veri koruma kanunlarına tam uyumlu olarak tasarlanmıştır. Verilerin lokalde saklanması sayesinde, veri sızıntılarına karşı en üst düzey koruma sağlanmıştır.
+    </p>
+
+    <footer>
+        &copy; 2026 Risely. Tüm Hakları Saklıdır.
+    </footer>
+</div>
+
+</body>
+</html>
