@@ -32,7 +32,7 @@
             font-family: 'Inter', sans-serif;
             background-color: var(--color-obsidian-900);
             color: var(--color-bone);
-            line-height: 1.6;
+            line-height: 1.7;
             padding: 40px 20px;
         }
 
@@ -51,6 +51,30 @@
             margin-bottom: 40px;
             border-bottom: 1px solid var(--color-border);
             padding-bottom: 30px;
+        }
+
+        .nav-links {
+            margin-top: 16px;
+            font-size: 13px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        .nav-links a {
+            color: var(--color-champagne-300);
+            text-decoration: none;
+            margin: 0 10px;
+            transition: color 0.2s ease, opacity 0.2s ease;
+            opacity: 0.8;
+        }
+
+        .nav-links a:hover {
+            color: var(--color-emerald-400);
+            opacity: 1;
+        }
+
+        .nav-links span {
+            color: var(--color-border);
         }
 
         .logo {
@@ -78,19 +102,20 @@
         }
 
         h1 {
-            font-size: 24px;
+            font-size: 26px;
             font-weight: 700;
             color: var(--color-white);
-            margin-bottom: 24px;
+            margin-bottom: 32px;
             text-align: center;
+            letter-spacing: 1px;
         }
 
         h2 {
-            font-size: 16px;
+            font-size: 17px;
             font-weight: 600;
             color: var(--color-champagne-400);
-            margin-top: 32px;
-            margin-bottom: 12px;
+            margin-top: 36px;
+            margin-bottom: 16px;
             text-transform: uppercase;
             letter-spacing: 1px;
             display: flex;
@@ -109,7 +134,7 @@
 
         p {
             font-size: 15px;
-            margin-bottom: 16px;
+            margin-bottom: 18px;
             color: var(--color-bone);
             opacity: 0.9;
             text-align: justify;
@@ -123,10 +148,11 @@
 
         li {
             font-size: 14px;
-            margin-bottom: 10px;
+            margin-bottom: 12px;
             position: relative;
             padding-left: 20px;
             opacity: 0.85;
+            text-align: justify;
         }
 
         li::before {
@@ -136,6 +162,11 @@
             position: absolute;
             left: 0;
             top: 0;
+        }
+
+        .highlight {
+            color: var(--color-white);
+            font-weight: 500;
         }
 
         footer {
@@ -170,38 +201,94 @@
     <header>
         <div class="logo">Risely</div>
         <div class="tagline">Sarsılmaz ol.</div>
-        <div class="last-update">Son Güncelleme: 17 Mayıs 2026</div>
+        <div class="nav-links">
+            <a href="index.html">Gizlilik Politikası</a>
+            <span>•</span>
+            <a href="terms.html">Kullanım Koşulları</a>
+        </div>
+        <div class="last-update" style="margin-top: 15px;">Son Güncelleme: 24 Mayıs 2026</div>
     </header>
 
     <h1>GİZLİLİK POLİTİKASI</h1>
 
     <p>
-        Risely uygulamasını tercih ettiğiniz için teşekkür ederiz. Risely, liderlik gelişimi, kişisel disiplin ve mental berraklık yolculuğunuzda size eşlik eden bir yapay zeka mentörlük platformudur. Biz, gizliliğinize en üst düzeyde önem veriyoruz. Bu Gizlilik Politikası, verilerinizin nasıl işlendiğini, nerede saklandığını ve haklarınızı korumak için aldığımız güvenlik önlemlerini açıklamaktadır.
+        Risely ekibi ("biz", "bize" veya "bizim") olarak, kullanıcılarımızın ("siz" veya "kullanıcı") kişisel verilerinin korunmasına son derece önem veriyoruz. Bu Gizlilik Politikası, Risely mobil uygulamasını kullanırken toplanan, işlenen ve saklanan verilerinizle ilgili politikalarımızı açıklamaktadır. Hizmetlerimizi kullanarak bu politikada açıklanan veri süreçlerini kabul etmiş sayılırsınız.
     </p>
 
-    <h2>1. Birincil İlke: Yerel Depolama (On-Device Storage)</h2>
-    <p>Risely, gizlilik ve veri sahipliği ilkesini temel alarak çalışır:</p>
-    <ul>
-        <li>Günlük yansımalarınız (refleksiyonlarınız), görev tamamlanma geçmişiniz, kazandığınız rozetler, başarılarınız ve kullanıcı adınız tamamen cihazınızın yerel depolama alanında (AsyncStorage ve expo-file-system) saklanır.</li>
-        <li>Bu veriler hiçbir merkezi Risely sunucusuna aktarılmaz, yedeklenmez ve bizim tarafımızdan üçüncü şahıslara satılmaz veya paylaşılmaz. Verileriniz tamamen sizin cihazınızda ve sizin kontrolünüzdedir.</li>
-    </ul>
-
-    <h2>2. Yapay Zeka (AI) Entegrasyonu ve Veri İletimi</h2>
-    <p>Uygulama içerisindeki kişisel liderlik analizleri, günlük kıvılcımlar ve gelişim manifestoları, dünya standartlarında yapay zeka modelleri (OpenAI / GPT) entegrasyonuyla üretilmektedir:</p>
-    <ul>
-        <li>Yapay zekaya gönderilen yansıma metinleri ve gelişim verileri, kimliğinizi doğrudan açık edecek hiçbir kişisel bilgi (soyadı, e-posta, telefon, IP adresi) barındırmaz.</li>
-        <li>AI analiz sorguları tamamen anonimleştirilmiş (isimsizleştirilmiş) verilerle gerçekleştirilir. Yapay zeka servis sağlayıcıları, bu verileri kendi modellerini eğitmek amacıyla kullanamaz.</li>
-    </ul>
-
-    <h2>3. Kullanıcı Hakları ve Kontrol</h2>
-    <ul>
-        <li><strong>Verileri Sıfırlama Hakkı:</strong> İstediğiniz an Ayarlar menüsünden aktif planınızı ve uygulama geçmişinizi sıfırlayabilirsiniz.</li>
-        <li><strong>Cihaz Değişikliği ve Veri Silme:</strong> Uygulamayı cihazınızdan sildiğinizde, cihazınızda saklanan tüm yerel veriler (yansımalarınız, rozetleriniz ve planınız) kalıcı olarak ve geri döndürülemeyecek şekilde silinir. Bu verileri harici olarak kurtarma imkanımız bulunmamaktadır.</li>
-    </ul>
-
-    <h2>4. Hukuki Koruma ve Uyumluluk</h2>
+    <h2>1. Veri Sorumlusu ve İletişim Bilgileri</h2>
     <p>
-        Bu gizlilik politikası, uygulamanın yayında olduğu tüm platformların yerel ve uluslararası gizlilik sözleşmelerine ve genel veri koruma kanunlarına tam uyumlu olarak tasarlanmıştır. Verilerin lokalde saklanması sayesinde, veri sızıntılarına karşı en üst düzey koruma sağlanmıştır.
+        Kişisel verilerinizin işlenmesiyle ilgili soru, talep veya endişeleriniz için bizimle iletişime geçebilirsiniz:
+        <br>
+        <span class="highlight">E-posta:</span> riselyappsupport@gmail.com
+    </p>
+
+    <h2>2. Toplanan Kişisel Veriler ve Yöntemleri</h2>
+    <p>Uygulamamızı kullanırken iki farklı veri türü işlenmektedir:</p>
+    
+    <h3>A. Doğrudan Sağladığınız Veriler (Hesap ve Profil Bilgileri):</h3>
+    <ul>
+        <li><span class="highlight">Kayıt Bilgileri:</span> Risely hesabınızı oluştururken girdiğiniz adınız-soyadınız, e-posta adresiniz ve şifreniz. Bu veriler kimlik doğrulama süreçleri için gereklidir.</li>
+        <li><span class="highlight">Günlük Yansımalar (Refleksiyonlar):</span> Mentörünüzle yaptığınız seanslarda girdiğiniz hedefleriniz, gelişim notlarınız ve yazılı cevaplarınız.</li>
+    </ul>
+
+    <h3>B. Otomatik Olarak Toplanan Teknik Veriler:</h3>
+    <ul>
+        <li><span class="highlight">Cihaz Bilgileri:</span> Uygulamanın kararlılığını sağlamak amacıyla cihaz modeli, işletim sistemi sürümü (iOS/Android) ve benzersiz cihaz kimliği.</li>
+        <li><span class="highlight">Hata ve Çökme Logları (Sentry):</span> Uygulama içerisinde bir çökme gerçekleştiğinde, sorunu giderebilmemiz amacıyla toplanan anonim çökme raporları.</li>
+        <li><span class="highlight">Satın Alma Geçmişi:</span> Abonelik durumunuzu doğrulamak amacıyla işlenen işlem kimliği (transaction ID) ve paket türü. Kredi kartı veya ödeme bilgileriniz asla bizim tarafımızdan görülmez veya saklanmaz (Bu işlemler tamamen Apple ve Google ödeme altyapıları tarafından yürütülür).</li>
+    </ul>
+
+    <h2>3. Temel İlke: Yerel Depolama (On-Device Priority)</h2>
+    <p>
+        Risely, maksimum gizlilik amacıyla veri saklamada "yerel öncelikli" mimariyle tasarlanmıştır:
+    </p>
+    <ul>
+        <li>Günlük seans geçmişiniz, refleksiyona dayalı notlarınız, kazandığınız rozetler ve ilerleme seviyeniz öncelikli olarak cihazınızın güvenli yerel depolama alanında (AsyncStorage ve FileSystem) tutulur.</li>
+        <li>Uygulamayı cihazınızdan tamamen sildiğinizde, bu yerel veriler kalıcı olarak silinecektir. Bulut senkronizasyonu sadece yedekleme ve birden fazla cihazda oturum açma amacıyla sınırlandırılmıştır.</li>
+    </ul>
+
+    <h2>4. Verilerin İşlenme Amaçları ve Hukuki Sebepleri</h2>
+    <p>Kişisel verileriniz aşağıdaki amaçlarla işlenmektedir:</p>
+    <ul>
+        <li>Kullanıcı hesabı oluşturmak ve oturum açma süreçlerini yönetmek.</li>
+        <li>Kişiselleştirilmiş liderlik ve gelişim yol haritanızı kurgulamak.</li>
+        <li>Yapay zeka mentörünüzle yaptığınız sohbetlerde size özel analizler ve yanıtlar üretebilmek.</li>
+        <li>Abonelik durumunuzu ve satın alımlarınızı doğrulamak.</li>
+        <li>Uygulamadaki hataları tespit etmek, sistem performansını artırmak ve çökme sorunlarını gidermek.</li>
+    </ul>
+
+    <h2>5. Üçüncü Taraflar ve Veri Aktarımı</h2>
+    <p>
+        Hizmetlerimizi sunabilmek amacıyla sınırlı miktarda veri, aşağıdaki güvenilir iş ortaklarımıza aktarılmaktadır:
+    </p>
+    <ul>
+        <li><span class="highlight">Supabase (Veritabanı ve Auth):</span> Kullanıcı hesaplarınızın ve bulut senkronizasyon verilerinizin güvenli şekilde saklanması amacıyla altyapı sağlayıcımız olarak kullanılır. Tüm iletişim şifreli (SSL/TLS) kanallar üzerinden gerçekleştirilir.</li>
+        <li><span class="highlight">OpenAI (Yapay Zeka Servisi):</span> Mentörlük seanslarındaki analizlerin yapılması amacıyla, girdiğiniz metinler OpenAI API'sine gönderilir. Gönderilen bu metinler kimliğinizi doğrudan belli edecek hiçbir veri barındırmaz ve OpenAI tarafından modelleri eğitmek amacıyla kullanılamaz.</li>
+        <li><span class="highlight">Sentry (Hata İzleme):</span> Uygulamadaki teknik çökmeleri ve performans darboğazlarını izlemek amacıyla anonim teknik raporlama yapar.</li>
+    </ul>
+
+    <h2>6. KVKK ve GDPR Kapsamındaki Haklarınız</h2>
+    <p>
+        Yerel ve uluslararası veri koruma kanunları uyarınca aşağıdaki haklara sahipsiniz:
+    </p>
+    <ul>
+        <li>Kişisel verilerinizin işlenip işlenmediğini öğrenme ve bilgi talep etme.</li>
+        <li>Eksik veya yanlış işlenmiş verilerinizin düzeltilmesini isteme.</li>
+        <li>Hesabınızın ve kişisel verilerinizin tamamen silinmesini (Unutulma Hakkı) talep etme.</li>
+        <li>Verilerinizin işlenmesine veya üçüncü kişilere aktarılmasına itiraz etme.</li>
+    </ul>
+    <p>
+        Bu haklarınızı kullanmak için dilediğiniz an <span class="highlight">riselyappsupport@gmail.com</span> adresine e-posta göndererek başvuru yapabilirsiniz.
+    </p>
+
+    <h2>7. Çocukların Gizliliği</h2>
+    <p>
+        Risely, 13 yaşın (veya bulunduğunuz ülkedeki yasal sınırın) altındaki çocukların kullanımına uygun değildir. Bilerek bu yaş grubundan veri toplamadığımızı beyan ederiz. Bir çocuğun bize veri sağladığını fark ederseniz lütfen bizimle iletişime geçin, gerekli verileri anında sileceğiz.
+    </p>
+
+    <h2>8. Politika Güncellemeleri</h2>
+    <p>
+        Yasal mevzuatlarda yapılan değişiklikler veya uygulama güncellemeleri doğrultusunda bu gizlilik politikasını zaman zaman güncelleyebiliriz. Güncellemeler bu sayfada yeni tarihle yayınlanacaktır.
     </p>
 
     <footer>
