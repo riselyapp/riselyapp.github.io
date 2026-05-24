@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Risely - Kullanım Koşulları (EULA)</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --color-obsidian-900: #020303;
+            --color-obsidian-500: #0C0E11;
+            --color-emerald-400: #67BDA7;
+            --color-emerald-300: #8DCEBD;
+            --color-champagne-500: #D9D2C5;
+            --color-champagne-400: #D0BE9A;
+            --color-champagne-300: #DCCDB3;
+            --color-bone: #E8E2D9;
+            --color-white: #FFFFFF;
+            --color-border: rgba(217, 210, 197, 0.08);
+            --color-glass: rgba(217, 210, 197, 0.02);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--color-obsidian-900);
+            color: var(--color-bone);
+            line-height: 1.6;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: var(--color-obsidian-500);
+            border: 1px solid var(--color-border);
+            border-radius: 24px;
+            padding: 48px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+            border-bottom: 1px solid var(--color-border);
+            padding-bottom: 30px;
+        }
+
+        .nav-links {
+            margin-top: 16px;
+            font-size: 13px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        .nav-links a {
+            color: var(--color-champagne-300);
+            text-decoration: none;
+            margin: 0 10px;
+            transition: color 0.2s ease, opacity 0.2s ease;
+            opacity: 0.8;
+        }
+
+        .nav-links a:hover {
+            color: var(--color-emerald-400);
+            opacity: 1;
+        }
+
+        .nav-links span {
+            color: var(--color-border);
+        }
+
+        .logo {
+            font-size: 32px;
+            font-weight: 700;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+            color: var(--color-white);
+            margin-bottom: 8px;
+        }
+
+        .tagline {
+            font-size: 14px;
+            color: var(--color-champagne-400);
+            letter-spacing: 6px;
+            text-transform: uppercase;
+            margin-bottom: 16px;
+            opacity: 0.8;
+        }
+
+        .last-update {
+            font-size: 12px;
+            color: var(--color-champagne-300);
+            opacity: 0.6;
+        }
+
+        h1 {
+            font-size: 24px;
+            font-weight: 700;
+            color: var(--color-white);
+            margin-bottom: 24px;
+            text-align: center;
+        }
+
+        h2 {
+            font-size: 16px;
+            font-weight: 600;
+            color: var(--color-champagne-400);
+            margin-top: 32px;
+            margin-bottom: 12px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            display: flex;
+            align-items: center;
+        }
+
+        h2::before {
+            content: "";
+            display: inline-block;
+            width: 8px;
+            height: 8px;
+            background-color: var(--color-emerald-400);
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+
+        p {
+            font-size: 15px;
+            margin-bottom: 16px;
+            color: var(--color-bone);
+            opacity: 0.9;
+            text-align: justify;
+        }
+
+        .warning-box {
+            background-color: rgba(208, 190, 154, 0.05);
+            border-left: 4px solid var(--color-champagne-400);
+            padding: 16px;
+            margin-bottom: 24px;
+            border-radius: 4px;
+        }
+
+        .warning-box p {
+            margin-bottom: 0;
+            font-size: 14px;
+            color: var(--color-champagne-300);
+        }
+
+        ul {
+            list-style-type: none;
+            margin-bottom: 24px;
+            padding-left: 8px;
+        }
+
+        li {
+            font-size: 14px;
+            margin-bottom: 10px;
+            position: relative;
+            padding-left: 20px;
+            opacity: 0.85;
+        }
+
+        li::before {
+            content: "•";
+            color: var(--color-emerald-300);
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+
+        footer {
+            margin-top: 48px;
+            border-top: 1px solid var(--color-border);
+            padding-top: 24px;
+            text-align: center;
+            font-size: 12px;
+            color: var(--color-champagne-300);
+            opacity: 0.5;
+        }
+
+        @media (max-width: 600px) {
+            body {
+                padding: 20px 10px;
+            }
+
+            .container {
+                padding: 24px;
+                border-radius: 16px;
+            }
+
+            h1 {
+                font-size: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <div class="logo">Risely</div>
+        <div class="tagline">Sarsılmaz ol.</div>
+        <div class="nav-links">
+            <a href="index.html">Gizlilik Politikası</a>
+            <span>•</span>
+            <a href="terms.html">Kullanım Koşulları</a>
+        </div>
+        <div class="last-update" style="margin-top: 15px;">Son Güncelleme: 24 Mayıs 2026</div>
+    </header>
+
+    <h1>KULLANIM KOŞULLARI (EULA)</h1>
+
+    <div class="warning-box">
+        <p><strong>ÖNEMLİ HUKUKİ UYARI:</strong> Risely, yapay zeka tabanlı bir liderlik gelişimi ve disiplin koçluğu uygulamasıdır. Bu uygulamada sunulan hiçbir analiz, öneri veya mentörlük mesajı tıbbi, klinik psikolojik, hukuki ya da finansal yatırım tavsiyesi niteliği taşımaz. Uygulamayı kullanarak bu koşulları peşinen kabul etmiş sayılırsınız.</p>
+    </div>
+
+    <div class="warning-box" style="border-left-color: var(--color-emerald-400);">
+        <p><strong>PLATFORM LİSANS SÖZLEŞMELERİ (EULA):</strong><br>
+        Risely uygulaması, indirildiği platforma göre ilgili mağazanın standart lisans sözleşmelerine tabidir:<br>
+        • <strong>iOS (Apple) Cihazları için:</strong> Uygulamamız Apple'ın standart son kullanıcı lisans sözleşmesine tabidir. <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/" target="_blank" style="color: var(--color-emerald-300); text-decoration: underline;">Apple Standart EULA Sözleşmesini Oku</a>.<br>
+        • <strong>Android (Google) Cihazları için:</strong> Uygulamamız Google Play Hizmet Şartlarına tabidir. <a href="https://play.google.com/about/play-terms/index.html" target="_blank" style="color: var(--color-emerald-300); text-decoration: underline;">Google Play Hizmet Şartlarını Oku</a>.</p>
+    </div>
+
+    <p>
+        Risely uygulamasına hoş geldiniz. Bu Kullanım Koşulları Sözleşmesi (EULA), Risely mobil uygulamasını kullanırken uymanız gereken kuralları, haklarınızı ve sorumluluklarınızı belirler. Lütfen uygulamayı kullanmaya başlamadan önce bu sözleşmeyi dikkatlice okuyunuz.
+    </p>
+
+    <h2>1. Yapay Zeka Koçluğu ve Sorumluluk Sınırı</h2>
+    <p>Risely, gelişmiş yapay zeka teknolojilerini kullanarak kişisel gelişim analizleri üretir:</p>
+    <ul>
+        <li>Yapay zeka modellerinin ürettiği yanıtlar bazen hatalı, eksik veya yanıltıcı bilgiler içerebilir. Risely, bu önerilerin doğruluğunu, bütünlüğünü veya işlevselliğini garanti etmez.</li>
+        <li>Yansımalarınız sonucu oluşturulan yol haritalarının ve disiplin görevlerinin uygulanması tamamen sizin kendi sorumluluğunuzdadır. Bu görevleri uygularken fiziksel veya zihinsel sağlığınızı tehlikeye atacak durumlardan kaçınmalısınız.</li>
+        <li>Uygulamadaki mentörlük seansları, profesyonel bir tıp doktorunun, psikiyatristin, ilişki terapistinin veya finansal danışmanın yerini alamaz. Ciddi sağlık sorunları veya finansal kararlar için her zaman lisanslı uzmanlara başvurmalısınız.</li>
+    </ul>
+
+    <h2>2. Abonelikler ve Ödemeler</h2>
+    <p>Risely Elite ve Pro abonelik modelleri uygulama mağazaları üzerinden sunulmaktadır:</p>
+    <ul>
+        <li>Tüm abonelik satın alımları, yenilemeleri ve iptalleri doğrudan Apple App Store veya Google Play Store altyapısı üzerinden yürütülür.</li>
+        <li>Abonelikler, iptal edilmediği sürece seçilen dönem sonunda (aylık veya yıllık) otomatik olarak yenilenir. Yenilenmeyi önlemek için dönem bitişinden en az 24 saat önce mağaza ayarlarınızdan aboneliğinizi iptal etmeniz gerekir.</li>
+        <li>İade talepleri tamamen Apple ve Google'ın kendi iade politikalarına tabidir. Risely ekibi doğrudan ödeme iadesi yapma yetkisine sahip değildir; bu talepler doğrudan ilgili mağaza destek birimine iletilmelidir.</li>
+    </ul>
+
+    <h2>3. Yerel Veri Saklama ve Güvenlik</h2>
+    <p>Risely verilerinizi korumak amacıyla yerel öncelikli çalışır:</p>
+    <ul>
+        <li>Uygulama içerisindeki yansımalarınız, günlük başarılarınız ve oluşturulan planlar telefonunuzun yerel depolamasında tutulur.</li>
+        <li>Uygulamanın silinmesi, yerel verilerinizin kalıcı olarak kaybolmasına yol açar. Risely, cihaz silinmesinden kaynaklanan veri kayıplarından sorumlu tutulamaz.</li>
+        <li>Hesap güvenliğiniz (şifrenizin gizliliği vb.) tamamen sizin sorumluluğunuzdadır. Şüpheli durumları derhal riselyappsupport@gmail.com adresine bildirmelisiniz.</li>
+    </ul>
+
+    <h2>4. Fikri Mülkiyet Hakları</h2>
+    <p>
+        Risely uygulamasının arayüz tasarımı, özgün metinleri, marka ismi, logosu ve geliştirilen özel prompt protokolleri Risely'e aittir. Bu materyallerin izinsiz kopyalanması, tersine mühendislik yapılması veya ticari amaçlarla dağıtılması yasaktır.
+    </p>
+
+    <h2>5. Sözleşme Değişiklikleri</h2>
+    <p>
+        Risely, gerekli gördüğü takdirde bu kullanım koşullarını güncelleme hakkını saklı tutar. Değişiklikler yapıldığında "Son Güncelleme" tarihi güncellenerek uygulama içinde veya web sitemizde yayınlanacaktır.
+    </p>
+
+    <footer>
+        Desteğe mi ihtiyacınız var? riselyappsupport@gmail.com adresinden bizimle iletişime geçin.<br>
+        &copy; 2026 Risely. Tüm Hakları Saklıdır.
+    </footer>
+</div>
+
+</body>
+</html>
